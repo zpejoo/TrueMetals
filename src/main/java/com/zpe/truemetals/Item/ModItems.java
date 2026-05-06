@@ -9,7 +9,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
+
 
 
 import java.util.function.Function;
@@ -17,6 +17,7 @@ import java.util.function.Function;
 public class ModItems {
 
     public static final Item ROSEGOLD = registerItem("rosegold", Item::new);
+    public static final Item STEEL = registerItem("steel", Item::new);
 
 
 
@@ -27,6 +28,8 @@ public class ModItems {
 
     public static void registerModItem() {
         TrueMetals.LOGGER.info("Registering Mod Items for " + TrueMetals.MOD_ID);
+
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> output.accept(ROSEGOLD));
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> output.accept(STEEL));
     }
 }
