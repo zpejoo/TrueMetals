@@ -1,5 +1,7 @@
 {
   "item.truemetals.rosegold": "Rosegold",
   "item.truemetals.steel": "Steel",
-  "block.truemetals.steel_block": "Steel Block"
+  "item.truemetals.steel_block": "Block of Steel",
+  "item.truemetals.rosegold_block": "Block of Rosegold"
+
 }
