@@ -1,6 +1,7 @@
 package com.zpe.truemetals;
 
 import com.zpe.truemetals.Blocks.ModBlocks;
+import com.zpe.truemetals.Item.ModItemGroups;
 import com.zpe.truemetals.Item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,6 +14,7 @@ public class TrueMetals implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroup();
 		ModItems.registerModItem();
 		ModBlocks.registerModBlocks();
 	}
