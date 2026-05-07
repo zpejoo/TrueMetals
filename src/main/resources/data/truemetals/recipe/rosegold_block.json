@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {"#":  "truemetals:rosegold" },
+  "pattern": ["###", "###", "###"],
+  "result": {"count": 1, "id": "truemetals:rosegold_block"}
+}
+

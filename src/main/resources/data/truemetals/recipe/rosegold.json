@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": ["truemetals:rosegold_block"],
+  "result": {
+    "count": 9,
+    "id": "truemetals:rosegold"
+  }
+}
