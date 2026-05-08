@@ -19,13 +19,15 @@ public class ModBlocks {
 
     public static final Block ROSEGOLD_BLOCK = registerBlock("rosegold_block",
             new Block(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TrueMetals.MOD_ID, "rosegold_block")))
-                    .strength(3.0f).requiresCorrectToolForDrops()));
+                    .strength(1.0f, 1.0f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
 
     public static final Block STEEL_BLOCK = registerBlock("steel_block",
             new Block(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TrueMetals.MOD_ID, "steel_block")))
-                    .strength(3.0f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+                    .strength(1.0f, 1.0f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
+
+//HELPERS PRA REGISTRAR OS BLOCOS NOVOS v
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

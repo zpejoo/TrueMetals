@@ -2,7 +2,6 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "bonus_rolls": 0.0,
       "conditions": [
         {
           "condition": "minecraft:survives_explosion"
@@ -11,11 +10,10 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "truemetals:rosegold_block"
+          "name": "truemetals:steel_block"
         }
       ],
-      "rolls": 1.0
+      "rolls": 1
     }
-  ],
-  "random_sequence": "truemetals:blocks/rosegold_block"
+  ]
 }

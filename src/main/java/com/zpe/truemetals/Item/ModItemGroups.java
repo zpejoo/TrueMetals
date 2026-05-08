@@ -16,8 +16,8 @@ public class ModItemGroups {
             .title(Component.translatable("crativemodetab.truemetals.truemetals_items"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.STEEL);
-                        output.accept(ModBlocks.STEEL_BLOCK);
                         output.accept(ModItems.ROSEGOLD);
+                        output.accept(ModBlocks.STEEL_BLOCK);
                         output.accept(ModBlocks.ROSEGOLD_BLOCK);
 
                     }).build());
