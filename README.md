@@ -1,9 +1,5 @@
 # TrueMetals
 
-## Setup
+## Idea
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+My friend had the idea to make a minecraft mod that added an accurate representation of how to make an metal alloy (this is way harder then we thought it would be).
