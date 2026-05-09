@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "truemetals:block/kiln_block"
+    }
+  }
+}
