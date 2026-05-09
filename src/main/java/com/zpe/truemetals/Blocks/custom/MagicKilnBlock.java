@@ -15,8 +15,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 
-public class KilnBlock extends Block {
-    public KilnBlock(Properties properties) {
+public class MagicKilnBlock extends Block {
+    public MagicKilnBlock(Properties properties) {
         super(properties);
     }
 
@@ -42,4 +42,6 @@ public class KilnBlock extends Block {
 
         super.stepOn(level, pos, onState, entity);
     }
+
+
 }

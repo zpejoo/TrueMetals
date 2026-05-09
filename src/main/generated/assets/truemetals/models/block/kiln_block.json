@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:block/cube",
+  "parent": "minecraft:block/cube_all",
   "textures": {
-    "down": "trumetals:kiln_block_botton",
-    "east": "trumetals:kiln_block_east",
-    "north": "trumetals:kiln_block_north",
-    "particle": "trumetals:kiln_block_north",
-    "south": "trumetals:kiln_block_south",
-    "up": "trumetals:kiln_block_top",
-    "west": "trumetals:kiln_block_west"
+    "down": "truemetals:block/kiln_block_botton",
+    "east": "truemetals:block/kiln_block_east",
+    "north": "truemetals:block/kiln_block_south",
+    "particle": "truemetals:block/kiln_block_north",
+    "south": "truemetals:block/kiln_block_north",
+    "up": "truemetals:block/kiln_block_top",
+    "west": "truemetals:block/kiln_block_west"
   }
 }

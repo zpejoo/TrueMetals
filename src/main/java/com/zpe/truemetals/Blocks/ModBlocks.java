@@ -1,6 +1,6 @@
 package com.zpe.truemetals.Blocks;
 
-import com.zpe.truemetals.Blocks.custom.KilnBlock;
+import com.zpe.truemetals.Blocks.custom.MagicKilnBlock;
 import com.zpe.truemetals.TrueMetals;
 
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
@@ -20,16 +20,22 @@ public class ModBlocks {
 
     public static final Block ROSEGOLD_BLOCK = registerBlock("rosegold_block",
             new Block(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TrueMetals.MOD_ID, "rosegold_block")))
-                    .strength(4.0f, 4.0f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+                    .strength(4.0f, 4.0f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)));
 
 
     public static final Block STEEL_BLOCK = registerBlock("steel_block",
             new Block(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TrueMetals.MOD_ID, "steel_block")))
-                    .strength(4.0f, 4.0f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+                    .strength(4.0f, 4.0f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)));
 
     public static final Block KILN_BLOCK = registerBlock("kiln_block",
-            new KilnBlock(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TrueMetals.MOD_ID, "kiln_block")))
-                    .strength(2.0f, 1.0f).requiresCorrectToolForDrops().sound(SoundType.BONE_BLOCK)));
+            new MagicKilnBlock(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TrueMetals.MOD_ID, "kiln_block")))
+                    .strength(2.0f, 1.0f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.BONE_BLOCK)));
 
 
 //HELPERS PRA REGISTRAR OS BLOCOS NOVOS v
