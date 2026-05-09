@@ -30,12 +30,12 @@ public class KilnBlock extends Block {
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState onState, Entity entity) {
 
-        if(entity instanceof ItemEntity itemEntity) {
-            if(itemEntity.getItem().getItem() == Items.GOLD_INGOT) {
+        if (entity instanceof ItemEntity itemEntity) {
+            if (itemEntity.getItem().getItem() == Items.GOLD_INGOT) {
                 itemEntity.setItem(new ItemStack(ModItems.ROSEGOLD, itemEntity.getItem().getCount()));
             }
 
-            if(itemEntity.getItem().getItem() == Items.IRON_INGOT) {
+            if (itemEntity.getItem().getItem() == Items.IRON_INGOT) {
                 itemEntity.setItem(new ItemStack(ModItems.STEEL, itemEntity.getItem().getCount()));
             }
         }

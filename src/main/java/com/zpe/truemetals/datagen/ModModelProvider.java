@@ -12,6 +12,8 @@ public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricPackOutput output) { super(output); }
 
 
+
+
     //GERADOR DOS BLOCOS
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators)  {

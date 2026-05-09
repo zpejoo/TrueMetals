@@ -20,12 +20,12 @@ public class ModBlocks {
 
     public static final Block ROSEGOLD_BLOCK = registerBlock("rosegold_block",
             new Block(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TrueMetals.MOD_ID, "rosegold_block")))
-                    .strength(3.0f, 3.0f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+                    .strength(4.0f, 4.0f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
 
     public static final Block STEEL_BLOCK = registerBlock("steel_block",
             new Block(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TrueMetals.MOD_ID, "steel_block")))
-                    .strength(3.0f, 3.0f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+                    .strength(4.0f, 4.0f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
     public static final Block KILN_BLOCK = registerBlock("kiln_block",
             new KilnBlock(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TrueMetals.MOD_ID, "kiln_block")))
