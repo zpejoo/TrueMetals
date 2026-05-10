@@ -20,6 +20,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(ModBlocks.STEEL_BLOCK);
         blockModelGenerators.createTrivialCube(ModBlocks.ROSEGOLD_BLOCK);
         blockModelGenerators.createTrivialCube(ModBlocks.KILN_BLOCK);
+
     }
 
     //GERADOR DOS ITENS

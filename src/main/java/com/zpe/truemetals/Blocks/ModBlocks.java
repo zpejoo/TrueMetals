@@ -18,6 +18,12 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class ModBlocks {
 
+    public static final Block KILN_BLOCK = registerBlock("kiln_block",
+            new MagicKilnBlock(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TrueMetals.MOD_ID, "kiln_block")))
+                    .strength(2.0f, 2.0f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.BONE_BLOCK)));
+
     public static final Block ROSEGOLD_BLOCK = registerBlock("rosegold_block",
             new Block(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TrueMetals.MOD_ID, "rosegold_block")))
                     .strength(4.0f, 4.0f)
@@ -30,13 +36,6 @@ public class ModBlocks {
                     .strength(4.0f, 4.0f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.METAL)));
-
-    public static final Block KILN_BLOCK = registerBlock("kiln_block",
-            new MagicKilnBlock(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TrueMetals.MOD_ID, "kiln_block")))
-                    .strength(2.0f, 1.0f)
-                    .requiresCorrectToolForDrops()
-                    .sound(SoundType.BONE_BLOCK)));
-
 
 //HELPERS PRA REGISTRAR OS BLOCOS NOVOS v
 

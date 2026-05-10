@@ -21,6 +21,7 @@ public class ModItemGroups {
                         output.accept(ModBlocks.ROSEGOLD_BLOCK);
                         output.accept(ModBlocks.KILN_BLOCK);
 
+
                     }).build());
 
     public static void registerItemGroup() {

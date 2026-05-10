@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube",
   "textures": {
     "down": "truemetals:block/kiln_block_botton",
     "east": "truemetals:block/kiln_block_east",
