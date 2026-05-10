@@ -6,4 +6,4 @@ My friend had the idea to make a minecraft mod that added an accurate representa
 
 ## What's happened
 
-Due to our lack of practical coding knowledge we had to use a bunch of tutorials and alot of research, since the only tutorial series for MC 26.1.2 is still on going and Fabric's documentation is very confusing (for me at least), im basically looking at outdated code trying to find its current counter part mostly via trial and error. And that's why it took me 12 hours to and Blocks, Items and Advanced Block.  :(
+Due to my lack of practical coding knowledge i had to use a bunch of tutorials and do alot of research, since the best tutorial series i could find for MC 26.1.2 Fabric modding is still on going and Fabric's documentation is very confusing (for me at least), so im basically looking at outdated code trying to find its current form of wrinting, mostly via trial and error. And that's why it took me 12 hours to add Blocks, Items and Advanced Blocks.  :(
