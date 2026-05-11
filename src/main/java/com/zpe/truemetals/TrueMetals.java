@@ -1,5 +1,6 @@
 package com.zpe.truemetals;
 
+import com.zpe.truemetals.Blocks.ModBlockEntity;
 import com.zpe.truemetals.Blocks.ModBlocks;
 import com.zpe.truemetals.Item.ModItemGroups;
 import com.zpe.truemetals.Item.ModItems;
@@ -14,6 +15,7 @@ public class TrueMetals implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModBlockEntity.registerModBlockEntity();
 		ModItemGroups.registerItemGroup();
 		ModItems.registerModItem();
 		ModBlocks.registerModBlocks();

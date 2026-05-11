@@ -10,7 +10,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "truemetals:kiln_block"
+          "name": "truemetals:magic_kiln_block"
 
         }
       ],

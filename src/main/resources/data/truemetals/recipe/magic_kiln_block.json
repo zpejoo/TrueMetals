@@ -3,9 +3,9 @@
   "category": "misc",
   "key": {"#":  "minecraft:brick" },
   "pattern": [
-    "###",
+    "# #",
     "# #",
     "###"],
-  "result": {"count": 1, "id": "truemetals:kiln_block"}
+  "result": {"count": 1, "id": "truemetals:magic_kiln_block"}
 }
 

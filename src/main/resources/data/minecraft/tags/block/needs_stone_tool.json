@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "truemetals:magic_kiln_block",
     "truemetals:kiln_block"
   ]
 }

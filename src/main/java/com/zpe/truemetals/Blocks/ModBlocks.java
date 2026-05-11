@@ -1,5 +1,7 @@
 package com.zpe.truemetals.Blocks;
 
+import com.zpe.truemetals.Blocks.custom.BlockEntities.KilnBlockEntity;
+import com.zpe.truemetals.Blocks.custom.KilnBlock;
 import com.zpe.truemetals.Blocks.custom.MagicKilnBlock;
 import com.zpe.truemetals.TrueMetals;
 
@@ -14,12 +16,20 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class ModBlocks {
 
     public static final Block KILN_BLOCK = registerBlock("kiln_block",
-            new MagicKilnBlock(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TrueMetals.MOD_ID, "kiln_block")))
+            new KilnBlock(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TrueMetals.MOD_ID, "kiln_block")))
+                    .strength(2.0f, 2.0f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.BONE_BLOCK)));
+
+
+    public static final Block MAGIC_KILN_BLOCK = registerBlock("magic_kiln_block",
+            new MagicKilnBlock(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TrueMetals.MOD_ID, "magic_kiln_block")))
                     .strength(2.0f, 2.0f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.BONE_BLOCK)));
@@ -56,5 +66,7 @@ public class ModBlocks {
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register(output -> output.accept(STEEL_BLOCK));
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register(output -> output.accept(ROSEGOLD_BLOCK));
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(output -> output.accept(MAGIC_KILN_BLOCK));
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(output -> output.accept(KILN_BLOCK));
     }
 }

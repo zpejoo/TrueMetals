@@ -4,8 +4,8 @@
 
   "item.truemetals.steel_block": "Block of Steel",
   "item.truemetals.rosegold_block": "Block of Rosegold",
-  "item.truemetals.kiln_block": "Magic Kiln",
-
+  "item.truemetals.magic_kiln_block": "Magic Kiln",
+  "item.truemetals.kiln_block": "Kiln",
 
   "crativemodetab.truemetals.truemetals_items": "TrueMetals"
 

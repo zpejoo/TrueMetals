@@ -19,7 +19,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators)  {
         blockModelGenerators.createTrivialCube(ModBlocks.STEEL_BLOCK);
         blockModelGenerators.createTrivialCube(ModBlocks.ROSEGOLD_BLOCK);
-        blockModelGenerators.createTrivialCube(ModBlocks.KILN_BLOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.MAGIC_KILN_BLOCK);
 
     }
 

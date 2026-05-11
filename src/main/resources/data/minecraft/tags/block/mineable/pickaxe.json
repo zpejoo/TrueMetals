@@ -3,6 +3,7 @@
   "values": [
     "truemetals:steel_block",
     "truemetals:rosegold_block",
+    "truemetals:magic_kiln_block",
     "truemetals:kiln_block"
   ]
 }
