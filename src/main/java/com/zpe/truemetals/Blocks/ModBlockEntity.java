@@ -17,6 +17,8 @@ public class ModBlockEntity {
     public static final BlockEntityType<KilnBlockEntity> KILN_BLOCK_ENTITY =
             register("kiln_block", KilnBlockEntity::new, ModBlocks.KILN_BLOCK);
 
+    //Block entities Helper
+
     private static <T extends BlockEntity> BlockEntityType<T> register(String name, FabricBlockEntityTypeBuilder.Factory<? extends T> entityFactory, Block... blocks) {
         Identifier id = Identifier.fromNamespaceAndPath(TrueMetals.MOD_ID, name);
         return Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE, id, FabricBlockEntityTypeBuilder.<T>create(entityFactory, blocks).build());

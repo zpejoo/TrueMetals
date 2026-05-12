@@ -12,15 +12,12 @@ public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricPackOutput output) { super(output); }
 
 
-
-
     //GERADOR DOS BLOCOS
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators)  {
         blockModelGenerators.createTrivialCube(ModBlocks.STEEL_BLOCK);
         blockModelGenerators.createTrivialCube(ModBlocks.ROSEGOLD_BLOCK);
         blockModelGenerators.createTrivialCube(ModBlocks.MAGIC_KILN_BLOCK);
-
     }
 
     //GERADOR DOS ITENS
@@ -28,5 +25,6 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerators itemModelGenerators){
         itemModelGenerators.generateFlatItem(ModItems.ROSEGOLD, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.STEEL, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.STEEL_PICKAXE, ModelTemplates.FLAT_ITEM);
     }
 }

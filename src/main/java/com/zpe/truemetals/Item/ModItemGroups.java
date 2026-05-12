@@ -21,6 +21,7 @@ public class ModItemGroups {
                         output.accept(ModBlocks.ROSEGOLD_BLOCK);
                         output.accept(ModBlocks.MAGIC_KILN_BLOCK);
                         output.accept(ModBlocks.KILN_BLOCK);
+                        output.accept(ModItems.STEEL_PICKAXE);
 
                     }).build());
 

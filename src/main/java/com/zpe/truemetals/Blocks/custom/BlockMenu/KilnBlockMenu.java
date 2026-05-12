@@ -1,0 +1,78 @@
+package com.zpe.truemetals.Blocks.custom.BlockMenu;
+
+import com.zpe.truemetals.Blocks.ModMenuType;
+import com.zpe.truemetals.Blocks.custom.BlockEntities.KilnBlockEntity;
+import net.minecraft.world.Container;
+import net.minecraft.world.SimpleContainer;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.item.ItemStack;
+
+public class KilnBlockMenu extends AbstractContainerMenu {
+    private final Container container;
+
+    // Client-side constructor
+    public KilnBlockMenu(final int containerId, final Inventory inventory) {
+        this(containerId, inventory, new SimpleContainer(KilnBlockEntity.CONTAINER_SIZE));
+    }
+
+    // Server-side constructor
+    public KilnBlockMenu(final int containerId, final Inventory inventory, final Container container) {
+        super(ModMenuType.KILN_BLOCK, containerId);
+        checkContainerSize(container, KilnBlockEntity.CONTAINER_SIZE);
+        this.container = container;
+
+        // Some containers do custom logic when opened by a player.
+        // TODO: is this intended to use this. ?
+        container.startOpen(inventory.player);
+
+        int rows = 2;
+        int columns = 2;
+
+        // Add the slots for our container in a 3x3 grid.
+        for (int y = 0; y < rows; y++) {
+            for (int x = 0; x < columns; x++) {
+                int slot = x + y * 2;
+                this.addSlot(new Slot(container, slot, 62 + x * 18, 17 + y * 18));
+            }
+        }
+
+        // Add the player inventory slots.
+        this.addStandardInventorySlots(inventory, 8, 84);
+    }
+
+    @Override
+    public ItemStack quickMoveStack(Player player, int slotIndex) {
+        Slot slot = this.slots.get(slotIndex);
+
+        if (!slot.hasItem()) {
+            return ItemStack.EMPTY;
+        }
+
+        ItemStack stack = slot.getItem();
+        ItemStack clicked = stack.copy();
+
+        if (slotIndex < this.container.getContainerSize()) {
+            if (!this.moveItemStackTo(stack, this.container.getContainerSize(), this.slots.size(), true)) {
+                return ItemStack.EMPTY;
+            }
+        } else if (!this.moveItemStackTo(stack, 0, this.container.getContainerSize(), false)) {
+            return ItemStack.EMPTY;
+        }
+
+        if (stack.isEmpty()) {
+            slot.setByPlayer(ItemStack.EMPTY);
+        } else {
+            slot.setChanged();
+        }
+
+        return clicked;
+    }
+
+    @Override
+    public boolean stillValid(Player player) {
+        return this.container.stillValid(player);
+    }
+}
