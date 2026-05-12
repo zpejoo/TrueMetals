@@ -20,7 +20,7 @@ public class ModItemGroups {
                         output.accept(ModBlocks.STEEL_BLOCK);
                         output.accept(ModBlocks.ROSEGOLD_BLOCK);
                         output.accept(ModBlocks.MAGIC_KILN_BLOCK);
-
+                        output.accept(ModBlocks.KILN_BLOCK);
 
                     }).build());
 

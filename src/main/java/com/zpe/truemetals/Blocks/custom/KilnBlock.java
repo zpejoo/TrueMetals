@@ -44,5 +44,4 @@ public class KilnBlock extends BaseEntityBlock {
 
         return InteractionResult.SUCCESS;
     }
-
 }
