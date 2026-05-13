@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {"#":  "truemetals:rosegold", "@": "minecraft:stick" },
+  "pattern": [
+    "###",
+    " @ ",
+    " @ "
+  ],
+  "result": {"count": 1, "id": "truemetals:rosegold_pickaxe"}
+}
+

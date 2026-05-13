@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "truemetals:block/magic_kiln_block"
+    "model": "truemetals:item/rosegold_helmet"
   }
 }

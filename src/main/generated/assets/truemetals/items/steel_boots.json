@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "truemetals:block/kiln_block"
+    "model": "truemetals:item/steel_boots"
   }
 }

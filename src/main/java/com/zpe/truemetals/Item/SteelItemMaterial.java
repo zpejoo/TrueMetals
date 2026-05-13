@@ -31,8 +31,10 @@ public class SteelItemMaterial {
             SteelItemMaterial.REPAIRS_STEEL_ARMOR
     );
 
+    public static final int BASE_DURABILITY = 20;
+
     public static final ArmorMaterial INSTANCE = new ArmorMaterial(
-            20,
+            BASE_DURABILITY,
             Map.of(
                 ArmorType.HELMET, 3,
                 ArmorType.CHESTPLATE, 8,

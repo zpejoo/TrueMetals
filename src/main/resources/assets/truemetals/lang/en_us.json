@@ -4,10 +4,17 @@
 
   "item.truemetals.steel_pickaxe": "Steel Pickaxe",
 
-  "item.truemetals.steel_block": "Block of Steel",
-  "item.truemetals.rosegold_block": "Block of Rosegold",
-  "item.truemetals.magic_kiln_block": "Magic Kiln",
-  "item.truemetals.kiln_block": "Kiln",
+  "item.truemetals.rosegold_pickaxe": "Rosegold Pickaxe",
+
+  "item.truemetals.rosegold_helmet": "Rosegold Helmet",
+  "item.truemetals.rosegold_chestplate": "Rosegold Chestplate",
+  "item.truemetals.rosegold_leggings": "Rosegold Leggings",
+  "item.truemetals.rosegold_boots": "Rosegold Boots",
+
+  "item.truemetals.steel_helmet": "Steel Helmet",
+  "item.truemetals.steel_chestplate": "Steel Chestplate",
+  "item.truemetals.steel_leggings": "Steel Leggings",
+  "item.truemetals.steel_boots": "Steel Boots",
 
   "block.truemetals.kiln_block": "Kiln",
 
